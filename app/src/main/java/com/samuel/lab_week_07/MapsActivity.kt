@@ -27,7 +27,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityMapsBinding
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
 
-    // Variabel ini dipindahkan ke dalam class [cite: 393]
     private val fusedLocationProviderClient by lazy {
         LocationServices.getFusedLocationProviderClient(this)
     }
